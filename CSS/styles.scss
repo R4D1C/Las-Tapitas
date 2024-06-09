@@ -1,0 +1,185 @@
+:root {
+    --colorPrincipal: #028533;
+    --colorMain: #06b947;
+    --colorSecundario: #F9B21F;
+}
+
+/* ------> GLOBALES */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../IMG/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: var(--colorPrincipal);
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    border-radius: 0 0 25px 25px;
+    align-self: center;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a { 
+    text-decoration: none;
+}
+
+h1, h2, p {
+    color: azure;
+}
+
+main {
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,1);
+    width: 80vw;
+    margin: 10rem auto;
+    padding: 5rem;
+    background-color: var(--colorPrincipal);
+    border-radius: 1.5rem;
+}
+
+/* UTILIDADES */
+
+.divisor {
+    border-bottom: 3px solid var(--colorSecundario);
+    margin: 5rem auto;
+}
+
+/* ------> BOTONES */
+
+.btn {
+    background-color: var(--colorSecundario);
+    border-color: black;
+    padding: 2.5rem 6rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--colorMain);
+    border-color: black;
+}
+
+.btn:focus {
+    background-color: var(--colorMain);
+}
+
+a.btn.btn-primary.active.btn-lg {
+    background-color: var(--colorMain);
+    border-color: black;
+}
+
+/* ------> HEADER */
+
+.logoImagen {
+    width: max(250px);
+    margin: 2rem 8rem;
+}
+
+.redes-contenedor {
+    margin: auto 0;
+    margin-right: 10rem;
+}
+
+.redes {
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+}
+
+.bi-facebook, .bi-whatsapp, .bi-instagram {
+    height: 5rem;
+    width: 5rem;
+    color: var(--colorSecundario);
+    margin-top: 2rem;
+}
+
+header {
+    div {
+        p {
+            font-size: 2.4rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-shadow: black 2px 2px 2px;
+        }
+    }
+}
+
+// INICIA EL MAIN
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+    border-bottom: 3px solid var(--colorSecundario);
+}
+
+main {
+    h2 {
+        margin-bottom: 5rem;
+        text-align: center;
+        font-size: 3.3rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    img {
+        height: 30rem;
+    }
+    .ilustrativa1 {
+        margin: 0 3rem 0 5rem;
+        float: left;
+    }
+    .ilustrativa2 {
+        margin: 0 5rem 0 3rem;
+        float: right;
+    }
+    .vision {
+        p {
+            font-size: 2.5rem;
+            line-height: 1.6;
+        }
+    }
+}
+
+footer {
+    background-color: var(--colorPrincipal);
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    border-radius: 25px 25px 0 0;
+    align-self: center;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,1);
+    div {
+        .copy {
+            font-size: 2rem;
+            align-self: flex-end;
+        }
+        .texto01 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-shadow: black 2px 2px 2px;
+        }
+    }
+}
